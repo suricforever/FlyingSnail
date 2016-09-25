@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACE20AD91D97EF00001B4F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20AD81D97EF00001B4F34 /* AppDelegate.swift */; };
+		ACE20ADB1D97EF00001B4F34 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20ADA1D97EF00001B4F34 /* FirstViewController.swift */; };
+		ACE20ADD1D97EF00001B4F34 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20ADC1D97EF00001B4F34 /* SecondViewController.swift */; };
+		ACE20AE01D97EF00001B4F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE20ADE1D97EF00001B4F34 /* Main.storyboard */; };
+		ACE20AE21D97EF00001B4F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE20AE11D97EF00001B4F34 /* Assets.xcassets */; };
+		ACE20AE51D97EF00001B4F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE20AE31D97EF00001B4F34 /* LaunchScreen.storyboard */; };
+		ACE20AF01D97EF00001B4F34 /* FLyingSnailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20AEF1D97EF00001B4F34 /* FLyingSnailTests.swift */; };
+		ACE20AFB1D97EF00001B4F34 /* FLyingSnailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20AFA1D97EF00001B4F34 /* FLyingSnailUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACE20AEC1D97EF00001B4F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE20ACD1D97EF00001B4F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE20AD41D97EF00001B4F34;
+			remoteInfo = FLyingSnail;
+		};
+		ACE20AF71D97EF00001B4F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE20ACD1D97EF00001B4F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE20AD41D97EF00001B4F34;
+			remoteInfo = FLyingSnail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACE20AD51D97EF00001B4F34 /* FLyingSnail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLyingSnail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE20AD81D97EF00001B4F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACE20ADA1D97EF00001B4F34 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		ACE20ADC1D97EF00001B4F34 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		ACE20ADF1D97EF00001B4F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACE20AE11D97EF00001B4F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE20AE41D97EF00001B4F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACE20AE61D97EF00001B4F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE20AEB1D97EF00001B4F34 /* FLyingSnailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLyingSnailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE20AEF1D97EF00001B4F34 /* FLyingSnailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLyingSnailTests.swift; sourceTree = "<group>"; };
+		ACE20AF11D97EF00001B4F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE20AF61D97EF00001B4F34 /* FLyingSnailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLyingSnailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE20AFA1D97EF00001B4F34 /* FLyingSnailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLyingSnailUITests.swift; sourceTree = "<group>"; };
+		ACE20AFC1D97EF00001B4F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACE20AD21D97EF00001B4F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE20AE81D97EF00001B4F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE20AF31D97EF00001B4F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACE20ACC1D97EF00001B4F34 = {
+			isa = PBXGroup;
+			children = (
+				ACE20AD71D97EF00001B4F34 /* FLyingSnail */,
+				ACE20AEE1D97EF00001B4F34 /* FLyingSnailTests */,
+				ACE20AF91D97EF00001B4F34 /* FLyingSnailUITests */,
+				ACE20AD61D97EF00001B4F34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACE20AD61D97EF00001B4F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACE20AD51D97EF00001B4F34 /* FLyingSnail.app */,
+				ACE20AEB1D97EF00001B4F34 /* FLyingSnailTests.xctest */,
+				ACE20AF61D97EF00001B4F34 /* FLyingSnailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACE20AD71D97EF00001B4F34 /* FLyingSnail */ = {
+			isa = PBXGroup;
+			children = (
+				ACE20AD81D97EF00001B4F34 /* AppDelegate.swift */,
+				ACE20ADA1D97EF00001B4F34 /* FirstViewController.swift */,
+				ACE20ADC1D97EF00001B4F34 /* SecondViewController.swift */,
+				ACE20ADE1D97EF00001B4F34 /* Main.storyboard */,
+				ACE20AE11D97EF00001B4F34 /* Assets.xcassets */,
+				ACE20AE31D97EF00001B4F34 /* LaunchScreen.storyboard */,
+				ACE20AE61D97EF00001B4F34 /* Info.plist */,
+			);
+			path = FLyingSnail;
+			sourceTree = "<group>";
+		};
+		ACE20AEE1D97EF00001B4F34 /* FLyingSnailTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE20AEF1D97EF00001B4F34 /* FLyingSnailTests.swift */,
+				ACE20AF11D97EF00001B4F34 /* Info.plist */,
+			);
+			path = FLyingSnailTests;
+			sourceTree = "<group>";
+		};
+		ACE20AF91D97EF00001B4F34 /* FLyingSnailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE20AFA1D97EF00001B4F34 /* FLyingSnailUITests.swift */,
+				ACE20AFC1D97EF00001B4F34 /* Info.plist */,
+			);
+			path = FLyingSnailUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACE20AD41D97EF00001B4F34 /* FLyingSnail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE20AFF1D97EF00001B4F34 /* Build configuration list for PBXNativeTarget "FLyingSnail" */;
+			buildPhases = (
+				ACE20AD11D97EF00001B4F34 /* Sources */,
+				ACE20AD21D97EF00001B4F34 /* Frameworks */,
+				ACE20AD31D97EF00001B4F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLyingSnail;
+			productName = FLyingSnail;
+			productReference = ACE20AD51D97EF00001B4F34 /* FLyingSnail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACE20AEA1D97EF00001B4F34 /* FLyingSnailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE20B021D97EF00001B4F34 /* Build configuration list for PBXNativeTarget "FLyingSnailTests" */;
+			buildPhases = (
+				ACE20AE71D97EF00001B4F34 /* Sources */,
+				ACE20AE81D97EF00001B4F34 /* Frameworks */,
+				ACE20AE91D97EF00001B4F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE20AED1D97EF00001B4F34 /* PBXTargetDependency */,
+			);
+			name = FLyingSnailTests;
+			productName = FLyingSnailTests;
+			productReference = ACE20AEB1D97EF00001B4F34 /* FLyingSnailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACE20AF51D97EF00001B4F34 /* FLyingSnailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE20B051D97EF00001B4F34 /* Build configuration list for PBXNativeTarget "FLyingSnailUITests" */;
+			buildPhases = (
+				ACE20AF21D97EF00001B4F34 /* Sources */,
+				ACE20AF31D97EF00001B4F34 /* Frameworks */,
+				ACE20AF41D97EF00001B4F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE20AF81D97EF00001B4F34 /* PBXTargetDependency */,
+			);
+			name = FLyingSnailUITests;
+			productName = FLyingSnailUITests;
+			productReference = ACE20AF61D97EF00001B4F34 /* FLyingSnailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACE20ACD1D97EF00001B4F34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = snail;
+				TargetAttributes = {
+					ACE20AD41D97EF00001B4F34 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7NLBE99QC4;
+						ProvisioningStyle = Automatic;
+					};
+					ACE20AEA1D97EF00001B4F34 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7NLBE99QC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACE20AD41D97EF00001B4F34;
+					};
+					ACE20AF51D97EF00001B4F34 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7NLBE99QC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACE20AD41D97EF00001B4F34;
+					};
+				};
+			};
+			buildConfigurationList = ACE20AD01D97EF00001B4F34 /* Build configuration list for PBXProject "FLyingSnail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACE20ACC1D97EF00001B4F34;
+			productRefGroup = ACE20AD61D97EF00001B4F34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE20AD41D97EF00001B4F34 /* FLyingSnail */,
+				ACE20AEA1D97EF00001B4F34 /* FLyingSnailTests */,
+				ACE20AF51D97EF00001B4F34 /* FLyingSnailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE20AD31D97EF00001B4F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE20AE51D97EF00001B4F34 /* LaunchScreen.storyboard in Resources */,
+				ACE20AE21D97EF00001B4F34 /* Assets.xcassets in Resources */,
+				ACE20AE01D97EF00001B4F34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE20AE91D97EF00001B4F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE20AF41D97EF00001B4F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACE20AD11D97EF00001B4F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE20ADD1D97EF00001B4F34 /* SecondViewController.swift in Sources */,
+				ACE20AD91D97EF00001B4F34 /* AppDelegate.swift in Sources */,
+				ACE20ADB1D97EF00001B4F34 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE20AE71D97EF00001B4F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE20AF01D97EF00001B4F34 /* FLyingSnailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE20AF21D97EF00001B4F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE20AFB1D97EF00001B4F34 /* FLyingSnailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACE20AED1D97EF00001B4F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE20AD41D97EF00001B4F34 /* FLyingSnail */;
+			targetProxy = ACE20AEC1D97EF00001B4F34 /* PBXContainerItemProxy */;
+		};
+		ACE20AF81D97EF00001B4F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE20AD41D97EF00001B4F34 /* FLyingSnail */;
+			targetProxy = ACE20AF71D97EF00001B4F34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACE20ADE1D97EF00001B4F34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE20ADF1D97EF00001B4F34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACE20AE31D97EF00001B4F34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE20AE41D97EF00001B4F34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACE20AFD1D97EF00001B4F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE20AFE1D97EF00001B4F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACE20B001D97EF00001B4F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ACE20B011D97EF00001B4F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ACE20B031D97EF00001B4F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLyingSnail.app/FLyingSnail";
+			};
+			name = Debug;
+		};
+		ACE20B041D97EF00001B4F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLyingSnail.app/FLyingSnail";
+			};
+			name = Release;
+		};
+		ACE20B061D97EF00001B4F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FLyingSnail;
+			};
+			name = Debug;
+		};
+		ACE20B071D97EF00001B4F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FLyingSnail;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACE20AD01D97EF00001B4F34 /* Build configuration list for PBXProject "FLyingSnail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE20AFD1D97EF00001B4F34 /* Debug */,
+				ACE20AFE1D97EF00001B4F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE20AFF1D97EF00001B4F34 /* Build configuration list for PBXNativeTarget "FLyingSnail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE20B001D97EF00001B4F34 /* Debug */,
+				ACE20B011D97EF00001B4F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACE20B021D97EF00001B4F34 /* Build configuration list for PBXNativeTarget "FLyingSnailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE20B031D97EF00001B4F34 /* Debug */,
+				ACE20B041D97EF00001B4F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACE20B051D97EF00001B4F34 /* Build configuration list for PBXNativeTarget "FLyingSnailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE20B061D97EF00001B4F34 /* Debug */,
+				ACE20B071D97EF00001B4F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACE20ACD1D97EF00001B4F34 /* Project object */;
+}

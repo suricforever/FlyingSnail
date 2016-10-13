@@ -1,0 +1,10 @@
+framework module BadgeListView {
+  umbrella header "BadgeListView.h"
+
+  export *
+  module * { export * }
+}
+
+module BadgeListView.Swift {
+    header "BadgeListView-Swift.h"
+}

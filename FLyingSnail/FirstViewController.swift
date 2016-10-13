@@ -9,17 +9,24 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var modeLabel: UILabel!
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        #if DEBUG
+            modeLabel.text = "This is DEBUG mode"
+        #elseif ADHOC
+            modeLabel.text = "This is ADHOC mode"
+        #else
+            modeLabel.text = "This is RELEASE mode"
+        #endif
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-

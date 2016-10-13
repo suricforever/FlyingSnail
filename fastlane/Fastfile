@@ -1,0 +1,107 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.105.2"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+    #carthage
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan
+  end
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    increment_build_number
+    update_provisionfiles
+    gym(
+      configuration: "AdHoc",
+      scheme: "FLyingSnail"
+      )
+    #pilot
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    gym(scheme: "FlyingSnail") # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+
+  desc "Custom lanes"
+  lane :update_provisionfiles do |options|
+    match(app_identifier: ["com.snail.Snail", "com.snail.Snail.ToadyExtension"], type: "adhoc")
+    if [:appstore]
+      match(app_identifier: ["com.snail.Snail", "com.snail.Snail.ToadyExtension"], type: "appstore")
+    end
+  end
+
+  private_lane :update_identifier do
+    update_app_identifier(
+      xcodeproj: "FLyingSnail.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
+      plist_path: "FLyingSnail/Info.plist", # Path to info plist file, relative to xcodeproj
+      app_identifier: "com.snail.Snail" # The App Identifier
+      )
+    update_app_identifier(
+      xcodeproj: "FLyingSnail.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
+      plist_path: "ToadyExtension/Info.plist", # Path to info plist file, relative to xcodeproj
+      app_identifier: "com.snail.Snail.ToadyExtension" # The App Identifier
+      )
+  end
+
+  # You can define as many lanes as you want
+  lane :update_version do |options|
+    # update version number
+    if options[:version_number]
+      increment_version_number(version_number: options[:version_number]) # Set a specific version number
+    end
+
+    # update build number
+    if options[:build_number]
+      increment_build_number(build_number: options[:build_number])
+    end
+  end
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+     slack(
+       message: "Successfully deployed new App to Fir.im."
+     )
+  end
+
+  error do |lane, exception|
+     slack(
+       message: exception.message,
+       success: false
+     )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer

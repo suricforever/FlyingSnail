@@ -636,7 +636,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaolian zhang (QE2HNSGV38)";
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -655,7 +655,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -776,7 +776,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -30,10 +30,11 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     increment_build_number
-    update_provisionfiles
+    #update_provisionfiles
     gym(
       configuration: "AdHoc",
-      scheme: "FLyingSnail"
+      scheme: "FLyingSnail",
+      export_method: "ad-hoc"
       )
     #pilot
     commit_version_bump(

@@ -18,6 +18,9 @@ default_platform :ios
 platform :ios do
   before_all do
      ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+     slack(
+       message: "Begin deploy new App to Fir.im."
+     )
     #carthage
   end
 
@@ -29,6 +32,25 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
+    increment_build_number
+    #update_provisionfiles
+    gym(
+      configuration: "Release",
+      scheme: "FLyingSnail",
+      )
+    pilot
+    commit_version_bump(
+      message: 'Build Version Bump by fastlane',
+      xcodeproj: './FLyingSnail.xcodeproj',
+      force: true
+    )
+    push_to_git_remote
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  desc "Submit a new AdHoc Build to Fir.im"
+  lane :adhoc do
     increment_build_number
     #update_provisionfiles
     gym(

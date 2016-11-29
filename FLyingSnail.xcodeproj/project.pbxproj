@@ -11,6 +11,7 @@
 		ACBC73281DBDB47100151040 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC73271DBDB47100151040 /* TodayViewController.swift */; };
 		ACBC732B1DBDB47100151040 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC73291DBDB47100151040 /* MainInterface.storyboard */; };
 		ACBC732F1DBDB47100151040 /* ToadyExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACBC73221DBDB47100151040 /* ToadyExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACC5966C1DED360400A06FF7 /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = ACC5966B1DED360400A06FF7 /* beta.png */; };
 		ACD7AB311DB0BDE900AA7B3F /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7AB2F1DB0BDE900AA7B3F /* FirstTableViewCell.swift */; };
 		ACD7AB321DB0BDE900AA7B3F /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD7AB301DB0BDE900AA7B3F /* FirstTableViewCell.xib */; };
 		ACE20AD91D97EF00001B4F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20AD81D97EF00001B4F34 /* AppDelegate.swift */; };
@@ -68,6 +69,7 @@
 		ACBC732A1DBDB47100151040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		ACBC732C1DBDB47100151040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC5966A1DED0CC300A06FF7 /* FLyingSnail copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FLyingSnail copy-Info.plist"; path = "/Users/zhangxiaolian/Desktop/FLyingSnail/FLyingSnail copy-Info.plist"; sourceTree = "<absolute>"; };
+		ACC5966B1DED360400A06FF7 /* beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beta.png; sourceTree = "<group>"; };
 		ACD7AB2F1DB0BDE900AA7B3F /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		ACD7AB301DB0BDE900AA7B3F /* FirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		ACE20AD51D97EF00001B4F34 /* FLyingSnail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLyingSnail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 				ACEEA6B71DE53A3400FC6054 /* Cartfile */,
 				ACE20AE11D97EF00001B4F34 /* Assets.xcassets */,
 				ACE20AE31D97EF00001B4F34 /* LaunchScreen.storyboard */,
+				ACC5966B1DED360400A06FF7 /* beta.png */,
 				ACE20AE61D97EF00001B4F34 /* Info.plist */,
 			);
 			name = SupportFiles;
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD7AB321DB0BDE900AA7B3F /* FirstTableViewCell.xib in Resources */,
+				ACC5966C1DED360400A06FF7 /* beta.png in Resources */,
 				ACE20AE51D97EF00001B4F34 /* LaunchScreen.storyboard in Resources */,
 				ACE20AE21D97EF00001B4F34 /* Assets.xcassets in Resources */,
 				ACE20AE01D97EF00001B4F34 /* Main.storyboard in Resources */,
@@ -416,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Hello world\"\nIFS=$'\\n'\nPATH=${PATH}:/usr/local/bin\n\nfunction generateIcon () {\n    BASE_IMAGE_NAME=$1\n\n    TARGET_PATH=\"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${BASE_IMAGE_NAME}\"\n    CURRENT_BRANCH=$(git branch --no-color | grep '*' | sed 's/^\\*.//')\n\n    echo $TARGET_PATH\n    echo $CURRENT_BRANCH\n    echo $SRCROOT\n    echo $(find ${SRCROOT} -name \"AppIcon60x60@2x.png\")\n    \n    BASE_IMAGE_PATH=$(find ${SRCROOT} -name ${BASE_IMAGE_NAME})\n    WIDTH=$(identify -format %w ${TARGET_PATH})\n    echo \"origin width $ORIGIN_WIDTH\"\n    \n    FONT_SIZE=$(echo \"$WIDTH * .15\" | bc -l)\n    echo \"font size $FONT_SIZE\"\n    \n    BETA_IMAGE_PATH=\"${SRCROOT}/inHouse/beta.png\"\n    RESIZE_IMAGE_PATH=\"${SRCROOT}/inHouse/resizedRibbon.png\"\n    \n    if [ \"${CONFIGURATION}\" == \"AdHoc\" ]; then\n    convert ${BETA_IMAGE_PATH} -resize ${WIDTH}x${WIDTH} ${RESIZE_IMAGE_PATH}\n    convert ${TARGET_PATH} -fill white -font Times-Bold -pointsize ${FONT_SIZE} -gravity south -annotate 0 \"$CURRENT_BRANCH\" ${TARGET_PATH}\n    composite ${RESIZE_IMAGE_PATH} ${TARGET_PATH} ${TARGET_PATH}\n    fi\n}\n\ngenerateIcon \"AppIcon60x60@2x.png\"\ngenerateIcon \"AppIcon60x60@3x.png\"\n";
+			shellScript = "echo \"Hello world\"\nIFS=$'\\n'\nPATH=${PATH}:/usr/local/bin\n\nfunction generateIcon () {\n    BASE_IMAGE_NAME=$1\n    \n    TARGET_PATH=\"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${BASE_IMAGE_NAME}\"\n    CURRENT_BRANCH=$(git branch --no-color | grep '*' | sed 's/^\\*.//')\n    \n    echo $TARGET_PATH\n    echo $CURRENT_BRANCH\n    echo $SRCROOT\n    echo $(find ${SRCROOT} -name \"AppIcon60x60@2x.png\")\n    \n    BASE_IMAGE_PATH=$(find ${SRCROOT} -name ${BASE_IMAGE_NAME})\n    WIDTH=$(identify -format %w ${TARGET_PATH})\n    \n    FONT_SIZE=$(echo \"$WIDTH * .15\" | bc -l)\n    echo \"font size $FONT_SIZE\"\n    \n    BETA_IMAGE_PATH=\"${SRCROOT}/inHouse/beta.png\"\n    RESIZE_IMAGE_PATH=\"${SRCROOT}/inHouse/resizedRibbon.png\"\n    \n    if [ \"${CONFIGURATION}\" == \"AdHoc\" ]; then\n    convert ${BETA_IMAGE_PATH} -resize ${WIDTH}x${WIDTH} ${RESIZE_IMAGE_PATH}\n    convert ${TARGET_PATH} -fill white -font Times-Bold -pointsize ${FONT_SIZE} -gravity south -annotate 0 \"$CURRENT_BRANCH\" ${TARGET_PATH}\n    composite ${RESIZE_IMAGE_PATH} ${TARGET_PATH} ${TARGET_PATH}\n    fi\n}\n\ngenerateIcon \"AppIcon60x60@2x.png\"\ngenerateIcon \"AppIcon60x60@3x.png\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -640,14 +644,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaolian zhang (QE2HNSGV38)";
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fbe0e165-e0cd-4958-b697-791bd6410965";
+				PROVISIONING_PROFILE = "9b4e819c-3c77-4fcc-a53a-5eb2c981b47b";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.snail.Snail";
+				STRIP_PNG_TEXT = NO;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -659,14 +665,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7b4ea9df-ec34-423e-b2e2-14891e978544";
+				PROVISIONING_PROFILE = "3dd5a4d8-c1b7-4ff7-8584-f2fa41f3e090";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.snail.Snail";
+				STRIP_PNG_TEXT = NO;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -781,6 +789,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
@@ -789,6 +798,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1a485288-f16d-436d-a06b-64d208e61491";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.snail.Snail";
+				STRIP_PNG_TEXT = NO;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

@@ -778,8 +778,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaolian zhang (QE2HNSGV38)";
+<<<<<<< HEAD
 				COMPRESS_PNG_FILES = YES;
+				CURRENT_PROJECT_VERSION = 36;
+=======
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 37;
+>>>>>>> Build Version Bump by fastlane
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -803,8 +808,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+<<<<<<< HEAD
 				COMPRESS_PNG_FILES = YES;
+				CURRENT_PROJECT_VERSION = 36;
+=======
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 37;
+>>>>>>> Build Version Bump by fastlane
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -931,8 +941,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+<<<<<<< HEAD
 				COMPRESS_PNG_FILES = YES;
+				CURRENT_PROJECT_VERSION = 36;
+=======
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 37;
+>>>>>>> Build Version Bump by fastlane
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

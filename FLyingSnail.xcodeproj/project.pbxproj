@@ -67,6 +67,7 @@
 		ACBC73271DBDB47100151040 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		ACBC732A1DBDB47100151040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		ACBC732C1DBDB47100151040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC5966A1DED0CC300A06FF7 /* FLyingSnail copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FLyingSnail copy-Info.plist"; path = "/Users/zhangxiaolian/Desktop/FLyingSnail/FLyingSnail copy-Info.plist"; sourceTree = "<absolute>"; };
 		ACD7AB2F1DB0BDE900AA7B3F /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		ACD7AB301DB0BDE900AA7B3F /* FirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		ACE20AD51D97EF00001B4F34 /* FLyingSnail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLyingSnail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +192,7 @@
 				ACBC73261DBDB47100151040 /* ToadyExtension */,
 				ACBC73231DBDB47100151040 /* Frameworks */,
 				ACE20AD61D97EF00001B4F34 /* Products */,
+				ACC5966A1DED0CC300A06FF7 /* FLyingSnail copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,7 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Hello world\"\n\nif [ \"${CONFIGURATION}\" == \"Beta\" ]; then\n    echo \"This is BETA configuration\"\nfi\n";
+			shellScript = "echo \"Hello world\"\nIFS=$'\\n'\nPATH=${PATH}:/usr/local/bin\n\nfunction generateIcon () {\n    BASE_IMAGE_NAME=$1\n\n    TARGET_PATH=\"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${BASE_IMAGE_NAME}\"\n    CURRENT_BRANCH=$(git branch --no-color | grep '*' | sed 's/^\\*.//')\n\n    echo $TARGET_PATH\n    echo $CURRENT_BRANCH\n    echo $SRCROOT\n    echo $(find ${SRCROOT} -name \"AppIcon60x60@2x.png\")\n    \n    BASE_IMAGE_PATH=$(find ${SRCROOT} -name ${BASE_IMAGE_NAME})\n    WIDTH=$(identify -format %w ${TARGET_PATH})\n    echo \"origin width $ORIGIN_WIDTH\"\n    \n    FONT_SIZE=$(echo \"$WIDTH * .15\" | bc -l)\n    echo \"font size $FONT_SIZE\"\n    \n    BETA_IMAGE_PATH=\"${SRCROOT}/inHouse/beta.png\"\n    RESIZE_IMAGE_PATH=\"${SRCROOT}/inHouse/resizedRibbon.png\"\n    \n    if [ \"${CONFIGURATION}\" == \"AdHoc\" ]; then\n    convert ${BETA_IMAGE_PATH} -resize ${WIDTH}x${WIDTH} ${RESIZE_IMAGE_PATH}\n    convert ${TARGET_PATH} -fill white -font Times-Bold -pointsize ${FONT_SIZE} -gravity south -annotate 0 \"$CURRENT_BRANCH\" ${TARGET_PATH}\n    composite ${RESIZE_IMAGE_PATH} ${TARGET_PATH} ${TARGET_PATH}\n    fi\n}\n\ngenerateIcon \"AppIcon60x60@2x.png\"\ngenerateIcon \"AppIcon60x60@3x.png\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

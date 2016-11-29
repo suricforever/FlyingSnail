@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FLyingSnail copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>FLyingSnail.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>ACBC73211DBDB47100151040</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ACC596541DED0CC300A06FF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

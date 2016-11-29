@@ -534,12 +534,123 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.ToadyExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "54873d28-247c-4b39-8369-d116421728e0";
+				PROVISIONING_PROFILE = "04ec23fc-9875-4641-87cd-6e89a0193adc";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.snail.Snail.ToadyExtension";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
+		};
+		ACC5966D1DED55CF00A06FF7 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "-D RELEASE";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = InHouse;
+		};
+		ACC5966E1DED55CF00A06FF7 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Teambition";
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = D869T5B34L;
+				INFOPLIST_FILE = FLyingSnail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "07e09b64-fdbd-449f-9078-7cfe23b286c0";
+				PROVISIONING_PROFILE_SPECIFIER = "FlyingSnail inhouse";
+				STRIP_PNG_TEXT = NO;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = InHouse;
+		};
+		ACC5966F1DED55CF00A06FF7 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLyingSnail.app/FLyingSnail";
+			};
+			name = InHouse;
+		};
+		ACC596701DED55CF00A06FF7 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7NLBE99QC4;
+				INFOPLIST_FILE = FLyingSnailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.FLyingSnailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FLyingSnail;
+			};
+			name = InHouse;
+		};
+		ACC596711DED55CF00A06FF7 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = D869T5B34L;
+				INFOPLIST_FILE = ToadyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.ToadyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ef5c5884-1f4b-4420-84db-e09a447daaf8";
+				PROVISIONING_PROFILE_SPECIFIER = "FlyingSnail InHouse TodayExtension";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = InHouse;
 		};
 		ACE20AFD1D97EF00001B4F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -857,6 +968,7 @@
 			buildConfigurations = (
 				ACBC73301DBDB47100151040 /* Debug */,
 				ACBC73321DBDB47100151040 /* Release */,
+				ACC596711DED55CF00A06FF7 /* InHouse */,
 				ACEEA6FC1DE58AA700FC6054 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -867,6 +979,7 @@
 			buildConfigurations = (
 				ACE20AFD1D97EF00001B4F34 /* Debug */,
 				ACE20AFE1D97EF00001B4F34 /* Release */,
+				ACC5966D1DED55CF00A06FF7 /* InHouse */,
 				ACEEA6F81DE58AA700FC6054 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -877,6 +990,7 @@
 			buildConfigurations = (
 				ACE20B001D97EF00001B4F34 /* Debug */,
 				ACE20B011D97EF00001B4F34 /* Release */,
+				ACC5966E1DED55CF00A06FF7 /* InHouse */,
 				ACEEA6F91DE58AA700FC6054 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -887,6 +1001,7 @@
 			buildConfigurations = (
 				ACE20B031D97EF00001B4F34 /* Debug */,
 				ACE20B041D97EF00001B4F34 /* Release */,
+				ACC5966F1DED55CF00A06FF7 /* InHouse */,
 				ACEEA6FA1DE58AA700FC6054 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -897,6 +1012,7 @@
 			buildConfigurations = (
 				ACE20B061D97EF00001B4F34 /* Debug */,
 				ACE20B071D97EF00001B4F34 /* Release */,
+				ACC596701DED55CF00A06FF7 /* InHouse */,
 				ACEEA6FB1DE58AA700FC6054 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;

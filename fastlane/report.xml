@@ -3,37 +3,32 @@
   <testsuite name="fastlane.lanes">
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000585">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.00049">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.00087">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000257">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: slack" time="1.921405">
+      <testcase classname="fastlane.lanes" name="2: slack" time="0.889748">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: match" time="44.771826">
+      <testcase classname="fastlane.lanes" name="3: update_app_identifier" time="0.199862">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: match" time="13.044256">
+      <testcase classname="fastlane.lanes" name="4: update_app_identifier" time="0.059894">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: match" time="13.15759">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="6: slack" time="1.961888">
+      <testcase classname="fastlane.lanes" name="5: slack" time="1.259891">
         
       </testcase>
     

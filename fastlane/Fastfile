@@ -19,7 +19,7 @@ platform :ios do
   before_all do
      ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
      slack(
-       message: "Begin deploy new App to Fir.im."
+       message: "Begin use fastlane"
      )
     #carthage
   end
@@ -49,6 +49,15 @@ platform :ios do
     # You can also use other beta testing services here (run `fastlane actions`)
   end
 
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    gym(scheme: "FlyingSnail") # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+
   desc "Submit a new AdHoc Build to Fir.im"
   lane :adhoc do
     increment_build_number
@@ -69,13 +78,16 @@ platform :ios do
     # You can also use other beta testing services here (run `fastlane actions`)
   end
 
-  desc "Deploy a new version to the App Store"
-  lane :release do
-    # match(type: "appstore")
-    # snapshot
-    gym(scheme: "FlyingSnail") # Build your app - more options available
-    deliver(force: true)
-    # frameit
+  desc "Submit a new InHouse Build to Fir.im"
+  lane :inhouse do
+    update_identifier(app_id: "com.snail.Snail-InHouse", today_extension_id: "com.snail.Snail-InHouse.ToadyExtension")
+    gym(
+      configuration: "InHouse",
+      scheme: "FLyingSnail",
+      export_method: "enterprise"
+      )
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
   end
 
   desc "Custom lanes"
@@ -87,16 +99,16 @@ platform :ios do
     end
   end
 
-  private_lane :update_identifier do
+  lane :update_identifier do |options|
     update_app_identifier(
       xcodeproj: "FLyingSnail.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
       plist_path: "FLyingSnail/Info.plist", # Path to info plist file, relative to xcodeproj
-      app_identifier: "com.snail.Snail" # The App Identifier
+      app_identifier: options[:app_id] # The App Identifier
       )
     update_app_identifier(
       xcodeproj: "FLyingSnail.xcodeproj", # Optional path to xcodeproj, will use the first .xcodeproj if not set
       plist_path: "ToadyExtension/Info.plist", # Path to info plist file, relative to xcodeproj
-      app_identifier: "com.snail.Snail.ToadyExtension" # The App Identifier
+      app_identifier: options[:today_extension_id] # The App Identifier
       )
   end
 
@@ -116,7 +128,7 @@ platform :ios do
   after_all do |lane|
     # This block is called, only if the executed lane was successful
      slack(
-       message: "Successfully deployed new App to Fir.im."
+       message: "App successfully released"
      )
   end
 

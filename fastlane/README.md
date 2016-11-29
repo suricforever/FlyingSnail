@@ -18,21 +18,31 @@ fastlane ios beta
 Submit a new Beta Build to Apple TestFlight
 
 This will also make sure the profile is up to date
-### ios adhoc
-```
-fastlane ios adhoc
-```
-Submit a new AdHoc Build to Fir.im
 ### ios release
 ```
 fastlane ios release
 ```
 Deploy a new version to the App Store
+### ios adhoc
+```
+fastlane ios adhoc
+```
+Submit a new AdHoc Build to Fir.im
+### ios inhouse
+```
+fastlane ios inhouse
+```
+Submit a new InHouse Build to Fir.im
 ### ios update_provisionfiles
 ```
 fastlane ios update_provisionfiles
 ```
 Custom lanes
+### ios update_identifier
+```
+fastlane ios update_identifier
+```
+
 ### ios update_version
 ```
 fastlane ios update_version

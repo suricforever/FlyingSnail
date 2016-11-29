@@ -3,37 +3,37 @@
   <testsuite name="fastlane.lanes">
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.0006">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000585">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.00026">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.00087">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: increment_build_number" time="1.715377">
+      <testcase classname="fastlane.lanes" name="2: slack" time="1.921405">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: gym" time="55.3489">
+      <testcase classname="fastlane.lanes" name="3: match" time="44.771826">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: commit_version_bump" time="0.315955">
+      <testcase classname="fastlane.lanes" name="4: match" time="13.044256">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: push_to_git_remote" time="14.982156">
+      <testcase classname="fastlane.lanes" name="5: match" time="13.15759">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: slack" time="1.267681">
+      <testcase classname="fastlane.lanes" name="6: slack" time="1.961888">
         
       </testcase>
     

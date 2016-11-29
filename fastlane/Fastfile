@@ -81,6 +81,7 @@ platform :ios do
   desc "Custom lanes"
   lane :update_provisionfiles do |options|
     match(app_identifier: ["com.snail.Snail", "com.snail.Snail.ToadyExtension"], type: "adhoc")
+    match(app_identifier: ["com.snail.Snail", "com.snail.Snail.ToadyExtension"], type: "adhoc")
     if [:appstore]
       match(app_identifier: ["com.snail.Snail", "com.snail.Snail.ToadyExtension"], type: "appstore")
     end

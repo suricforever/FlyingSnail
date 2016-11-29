@@ -18,6 +18,11 @@ fastlane ios beta
 Submit a new Beta Build to Apple TestFlight
 
 This will also make sure the profile is up to date
+### ios adhoc
+```
+fastlane ios adhoc
+```
+Submit a new AdHoc Build to Fir.im
 ### ios release
 ```
 fastlane ios release

@@ -132,6 +132,13 @@ platform :ios do
      )
   end
 
+  lane :update_display_name do
+    update_info_plist( # Change the Display Name of your app
+      plist_path: "FLyingSnail/Info.plist",
+      display_name: git_branch
+    )
+  end
+
   error do |lane, exception|
      slack(
        message: exception.message,

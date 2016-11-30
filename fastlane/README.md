@@ -48,6 +48,11 @@ fastlane ios update_identifier
 fastlane ios update_version
 ```
 
+### ios update_display_name
+```
+fastlane ios update_display_name
+```
+
 
 ----
 

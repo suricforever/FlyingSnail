@@ -129,8 +129,7 @@ platform :ios do
   lane :update_display_name do
     update_info_plist( # Change the Display Name of your app
       plist_path: "FLyingSnail/Info.plist",
-      display_name: git_branch.split(pattern=$/).last
-
+      display_name: git_branch.split(/\//).last
     )
   end
 

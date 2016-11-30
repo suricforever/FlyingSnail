@@ -3,32 +3,32 @@
   <testsuite name="fastlane.lanes">
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000818">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000728">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000341">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000247">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: slack" time="2.92661">
+      <testcase classname="fastlane.lanes" name="2: slack" time="1.37076">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: git_branch" time="0.013283">
+      <testcase classname="fastlane.lanes" name="3: git_branch" time="0.01686">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: update_info_plist" time="0.134246">
+      <testcase classname="fastlane.lanes" name="4: update_info_plist" time="0.139962">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: slack" time="0.780543">
+      <testcase classname="fastlane.lanes" name="5: slack" time="1.219878">
         
       </testcase>
     

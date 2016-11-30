@@ -81,6 +81,7 @@ platform :ios do
   desc "Submit a new InHouse Build to Fir.im"
   lane :inhouse do
     update_identifier(app_id: "com.snail.Snail-InHouse", today_extension_id: "com.snail.Snail-InHouse.ToadyExtension")
+    update_display_name
     gym(
       configuration: "InHouse",
       scheme: "FLyingSnail",
@@ -125,18 +126,18 @@ platform :ios do
     end
   end
 
-  after_all do |lane|
-    # This block is called, only if the executed lane was successful
-     slack(
-       message: "App successfully released"
-     )
-  end
-
   lane :update_display_name do
     update_info_plist( # Change the Display Name of your app
       plist_path: "FLyingSnail/Info.plist",
       display_name: git_branch
     )
+  end
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+     slack(
+       message: "App successfully released"
+     )
   end
 
   error do |lane, exception|

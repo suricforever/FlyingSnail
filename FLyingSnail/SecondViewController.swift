@@ -9,13 +9,24 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    var first: String?
+    var third: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+         //print("nice \(FirstViewController().a)")
+        testNilCoalescing()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func testNilCoalescing() {
+        print("Begin test")
+//        let share = ["first": first ?? "",
+//                     "second": third ?? ""
+//        ]
     }
     
 }

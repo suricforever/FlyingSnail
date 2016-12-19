@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let width = 94
         let widthLabel = String(width)
         print("widthLabel.characters: \(widthLabel)")
+        //print("nice \(FirstViewController().chartViewColors)")
+
         
         return true
     }

@@ -13,7 +13,6 @@ class FirstTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        //print("nice \(FirstViewController().a)")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

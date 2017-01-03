@@ -6,6 +6,7 @@
 //  Copyright © 2016年 snail. All rights reserved.
 //
 import UIKit
+
 class FirstViewController: UIViewController {
     @IBOutlet weak var modeLabel: UILabel!
     lazy var ChartViewColors: [UIColor] = self.createChartViewColors()

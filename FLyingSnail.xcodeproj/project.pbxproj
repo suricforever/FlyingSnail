@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC13999B1DEE843000B0034D /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = AC13999A1DEE843000B0034D /* beta.png */; };
+		AC7C203B1E1B8C0100FD46C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */; };
 		ACBC73251DBDB47100151040 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBC73241DBDB47100151040 /* NotificationCenter.framework */; };
 		ACBC73281DBDB47100151040 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC73271DBDB47100151040 /* TodayViewController.swift */; };
 		ACBC732B1DBDB47100151040 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC73291DBDB47100151040 /* MainInterface.storyboard */; };
@@ -64,12 +65,13 @@
 
 /* Begin PBXFileReference section */
 		AC13999A1DEE843000B0034D /* beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beta.png; sourceTree = "<group>"; };
+		AC7C20391E1B807D00FD46C9 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		ACBC73221DBDB47100151040 /* ToadyExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ToadyExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBC73241DBDB47100151040 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		ACBC73271DBDB47100151040 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		ACBC732A1DBDB47100151040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		ACBC732C1DBDB47100151040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACC5966A1DED0CC300A06FF7 /* FLyingSnail copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FLyingSnail copy-Info.plist"; path = "/Users/zhangxiaolian/Desktop/FLyingSnail/FLyingSnail copy-Info.plist"; sourceTree = "<absolute>"; };
 		ACD7AB2F1DB0BDE900AA7B3F /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		ACD7AB301DB0BDE900AA7B3F /* FirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
 		ACE20AD51D97EF00001B4F34 /* FLyingSnail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLyingSnail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7C203B1E1B8C0100FD46C9 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +128,7 @@
 		ACBC73231DBDB47100151040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */,
 				ACBC73241DBDB47100151040 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -169,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				ACEEA6B71DE53A3400FC6054 /* Cartfile */,
+				AC7C20391E1B807D00FD46C9 /* Cartfile.resolved */,
 				ACE20AE11D97EF00001B4F34 /* Assets.xcassets */,
 				AC13999A1DEE843000B0034D /* beta.png */,
 				ACE20AE31D97EF00001B4F34 /* LaunchScreen.storyboard */,
@@ -195,7 +200,6 @@
 				ACBC73261DBDB47100151040 /* ToadyExtension */,
 				ACBC73231DBDB47100151040 /* Frameworks */,
 				ACE20AD61D97EF00001B4F34 /* Products */,
-				ACC5966A1DED0CC300A06FF7 /* FLyingSnail copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +273,7 @@
 				ACE20AD31D97EF00001B4F34 /* Resources */,
 				ACBC73341DBDB47100151040 /* Embed App Extensions */,
 				AC647B101DDC10C400E9729E /* ShellScript */,
+				AC7C203D1E1B960400FD46C9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -421,6 +426,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"Hello world\"\nIFS=$'\\n'\nPATH=${PATH}:/usr/local/bin\n\nfunction generateIcon () {\n    BASE_IMAGE_NAME=$1\n    \n    TARGET_PATH=\"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${BASE_IMAGE_NAME}\"\n    CURRENT_BRANCH=$(git branch --no-color | grep '*' | sed 's/^\\*.//')\n    \n    BASE_IMAGE_PATH=$(find ${SRCROOT} -name ${BASE_IMAGE_NAME})\n    WIDTH=$(identify -format %w ${TARGET_PATH})\n    \n    FONT_SIZE=$(echo \"$WIDTH * .15\" | bc -l)\n    echo \"font size $FONT_SIZE\"\n    \n    BETA_IMAGE_PATH=\"${SRCROOT}/inHouse/beta.png\"\n    RESIZE_IMAGE_PATH=\"${SRCROOT}/inHouse/resizedRibbon.png\"\n    \n    if [ \"${CONFIGURATION}\" == \"InHouse\" ]; then\n    convert ${BETA_IMAGE_PATH} -resize ${WIDTH}x${WIDTH} ${RESIZE_IMAGE_PATH}\n    composite ${RESIZE_IMAGE_PATH} ${TARGET_PATH} ${TARGET_PATH}\n    fi\n}\n\ngenerateIcon \"AppIcon60x60@2x.png\"\ngenerateIcon \"AppIcon60x60@3x.png\"\n";
+		};
+		AC7C203D1E1B960400FD46C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -595,6 +614,10 @@
 				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = D869T5B34L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
@@ -758,6 +781,10 @@
 				COMPRESS_PNG_FILES = YES;
 				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
@@ -779,6 +806,10 @@
 				COMPRESS_PNG_FILES = YES;
 				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
@@ -903,6 +934,10 @@
 				COMPRESS_PNG_FILES = YES;
 				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FLyingSnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;

@@ -24,9 +24,6 @@ class SecondViewController: UIViewController {
     
     func testNilCoalescing() {
         print("Begin test")
-//        let share = ["first": first ?? "",
-//                     "second": third ?? ""
-//        ]
     }
     
 }

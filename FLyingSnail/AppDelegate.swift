@@ -8,6 +8,8 @@
 
 import UIKit
 import AdSupport
+import Alamofire
+import CoreTelephony
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,15 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        if let advertisingIdentifier = ASIdentifierManager.shared().advertisingIdentifier {
-            print("advertisingIdentifier: \(advertisingIdentifier)")
-        }
+        // AdvertisingIdentifier
+        printAdvertisingIdentifier()
         
-        let width = 94
-        let widthLabel = String(width)
-        print("widthLabel.characters: \(widthLabel)")
-        //print("nice \(FirstViewController().chartViewColors)")
-
+        // send url request
+        sendURLRequest()
+        
+        // request Cellular
+        printCellularState()
         
         return true
     }
@@ -53,5 +54,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+// MARK: - Private Methods
+
+extension AppDelegate {
+    func printAdvertisingIdentifier() {
+        if let advertisingIdentifier = ASIdentifierManager.shared().advertisingIdentifier {
+            print("advertisingIdentifier: \(advertisingIdentifier)")
+        }
+    }
+    
+    func sendURLRequest() {
+        Alamofire.request("https://httpbin.org/get").responseJSON { response in
+            print(response.request)  // original URL request
+            print(response.response) // HTTP URL response
+            print(response.data)     // server data
+            print(response.result)   // result of response serialization
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
+        }
+    }
+    
+    func printCellularState() {
+        let cellularData = CTCellularData()
+        cellularData.cellularDataRestrictionDidUpdateNotifier = { (state) -> Void
+             in
+            print("state: \(state)")
+        }
+    }
 }
 

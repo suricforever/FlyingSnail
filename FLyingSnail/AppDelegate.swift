@@ -82,7 +82,14 @@ extension AppDelegate {
         let cellularData = CTCellularData()
         cellularData.cellularDataRestrictionDidUpdateNotifier = { (state) -> Void
              in
-            print("state: \(state.rawValue)")
+            switch state {
+            case .restrictedStateUnknown:
+                print("Unknown State")
+            case .restricted:
+                print("Restricted State")
+            case .notRestricted:
+                print("notRestricted State")
+            }
         }
     }
 }

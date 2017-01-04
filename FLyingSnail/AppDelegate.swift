@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         printAdvertisingIdentifier()
         
         // send url request
-        sendURLRequest()
+        //sendURLRequest()
         
         // request Cellular
         printCellularState()
@@ -67,9 +67,9 @@ extension AppDelegate {
     
     func sendURLRequest() {
         Alamofire.request("https://httpbin.org/get").responseJSON { response in
-            print(response.request)  // original URL request
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data
+            print(response.request as Any)  // original URL request
+            print(response.response as Any) // HTTP URL response
+            print(response.data as Any)     // server data
             print(response.result)   // result of response serialization
             
             if let JSON = response.result.value {
@@ -82,7 +82,7 @@ extension AppDelegate {
         let cellularData = CTCellularData()
         cellularData.cellularDataRestrictionDidUpdateNotifier = { (state) -> Void
              in
-            print("state: \(state)")
+            print("state: \(state.rawValue)")
         }
     }
 }

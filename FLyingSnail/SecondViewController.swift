@@ -14,7 +14,8 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         //print("nice \(FirstViewController().a)")
+         print("nice \(FirstViewController().ChartViewColors)")
+        print("nice \(FirstViewController().ChartViewColors)")
         testNilCoalescing()
     }
 

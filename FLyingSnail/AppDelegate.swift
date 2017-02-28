@@ -19,14 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // AdvertisingIdentifier
-        printAdvertisingIdentifier()
+//        // AdvertisingIdentifier
+//        printAdvertisingIdentifier()
+//        // send url request
+//        sendURLRequest()
+//        // request Cellular
+//        printCellularState()
         
-        // send url request
-        //sendURLRequest()
-        
-        // request Cellular
-        printCellularState()
+        // test UserDefaults
+        testUserDefaults()
         
         return true
     }
@@ -90,6 +91,28 @@ extension AppDelegate {
             case .notRestricted:
                 print("notRestricted State")
             }
+        }
+    }
+    
+    func testUserDefaults() {
+        let valueUserData = UserDefaults.standard.value(forKey: UserDefaultsConstants.userData)
+        if let valueUserData = valueUserData as? Data, let userName = String(data: valueUserData, encoding: .utf8) {
+            print("valueUserData: \(userName)")
+        }
+        
+        let objectUserData = UserDefaults.standard.object(forKey: UserDefaultsConstants.userData)
+        if let objectUserData = objectUserData as? Data, let userName = String(data: objectUserData, encoding: .utf8) {
+            print("username: \(userName)")
+        } else {
+            let userData = "Suric".data(using: .utf8)
+            UserDefaults.standard.setValue(userData, forKey: UserDefaultsConstants.userData)
+            UserDefaults.standard.synchronize()
+        }
+        
+        let a = UserDefaultsConstants.isNewUser
+        let b = UserDefaultsConstants.isNewUser
+        if a == b {
+            print("So nice")
         }
     }
 }

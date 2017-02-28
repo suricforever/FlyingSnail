@@ -11,6 +11,7 @@
 		AC0E94BD1E1F4BDE00A8C76C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0E94BB1E1F4BDE00A8C76C /* MainInterface.storyboard */; };
 		AC0E94C11E1F4BDE00A8C76C /* FLyingSnailActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC0E94B71E1F4BDE00A8C76C /* FLyingSnailActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AC0E94C71E1F55FF00A8C76C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */; };
+		AC11FDD21E2FD4E1009FC8EF /* UserDefaultsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */; };
 		AC13999B1DEE843000B0034D /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = AC13999A1DEE843000B0034D /* beta.png */; };
 		AC7C203B1E1B8C0100FD46C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */; };
 		ACBC73251DBDB47100151040 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBC73241DBDB47100151040 /* NotificationCenter.framework */; };
@@ -80,6 +81,7 @@
 		AC0E94B91E1F4BDE00A8C76C /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AC0E94BC1E1F4BDE00A8C76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		AC0E94BE1E1F4BDE00A8C76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsConstants.swift; sourceTree = "<group>"; };
 		AC13999A1DEE843000B0034D /* beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beta.png; sourceTree = "<group>"; };
 		AC7C20391E1B807D00FD46C9 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -157,6 +159,14 @@
 				AC0E94BE1E1F4BDE00A8C76C /* Info.plist */,
 			);
 			path = FLyingSnailActionExtension;
+			sourceTree = "<group>";
+		};
+		AC11FDD01E2FD42A009FC8EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		ACBC73231DBDB47100151040 /* Frameworks */ = {
@@ -257,6 +267,7 @@
 				ACD7AB2B1DB0BD0F00AA7B3F /* ViewController */,
 				ACD7AB2E1DB0BD8100AA7B3F /* View */,
 				ACD7AB2C1DB0BD3200AA7B3F /* StoryBoard */,
+				AC11FDD01E2FD42A009FC8EF /* Model */,
 				ACD7AB2D1DB0BD5800AA7B3F /* SupportFiles */,
 			);
 			path = FLyingSnail;
@@ -532,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC11FDD21E2FD4E1009FC8EF /* UserDefaultsConstants.swift in Sources */,
 				ACE20B091D97F4FA001B4F34 /* FirstViewController.swift in Sources */,
 				ACE20ADD1D97EF00001B4F34 /* SecondViewController.swift in Sources */,
 				ACD7AB311DB0BDE900AA7B3F /* FirstTableViewCell.swift in Sources */,
@@ -761,6 +773,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D RELEASE -Xfrontend -debug-time-function-bodies";
 				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -884,6 +897,7 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG -Xfrontend -debug-time-function-bodies";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -928,6 +942,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D RELEASE";
 				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1081,6 +1096,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D ADHOC -Xfrontend -debug-time-function-bodies";
 				SDKROOT = iphoneos;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

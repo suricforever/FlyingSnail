@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         
         print("nice")
+        print("add release")
         
         return true
     }

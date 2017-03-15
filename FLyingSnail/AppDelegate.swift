@@ -19,15 +19,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        // AdvertisingIdentifier
-//        printAdvertisingIdentifier()
-//        // send url request
-//        sendURLRequest()
-//        // request Cellular
-//        printCellularState()
+        // AdvertisingIdentifier
+        printAdvertisingIdentifier()
+        // send url request
+        sendURLRequest()
+        // request Cellular
+        printCellularState()
         
         // test UserDefaults
         testUserDefaults()
+        
+        // test private deploy
+        #if PRIVATE
+        print("Private deploy")
+        #else
+        print("normal deploy")
+            
+        #endif
         
         return true
     }

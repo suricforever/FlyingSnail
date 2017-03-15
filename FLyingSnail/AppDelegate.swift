@@ -34,8 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Private deploy")
         #else
         print("normal deploy")
-            
         #endif
+        
+        print("nice")
         
         return true
     }

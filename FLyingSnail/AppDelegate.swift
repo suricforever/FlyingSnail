@@ -36,8 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("normal deploy")
         #endif
         
-        print("nice")
-        
         return true
     }
 

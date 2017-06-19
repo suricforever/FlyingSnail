@@ -23,7 +23,6 @@ class FirstViewController: UIViewController {
             UIColor(red: 160/255, green: 209/255, blue: 109/255, alpha: 1),
             ]
     }()
-    
     lazy var ChartViewColors3: [UIColor] = {
         print("**ChartViewColors3**")
         return [
@@ -48,6 +47,9 @@ class FirstViewController: UIViewController {
         }
     }
     
+    
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -76,10 +78,6 @@ class FirstViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    // MARK: - IBActions
-    @IBAction func buttonAction() {
     }
     
     private func createChartViewColors() -> [UIColor] {

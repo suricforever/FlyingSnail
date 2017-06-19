@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		AC11FDD21E2FD4E1009FC8EF /* UserDefaultsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */; };
 		AC13999B1DEE843000B0034D /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = AC13999A1DEE843000B0034D /* beta.png */; };
+		AC1BB9AD1E9DF653000110F3 /* ProductIDs.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC1BB9AC1E9DF653000110F3 /* ProductIDs.plist */; };
+		AC2FAAA81E963476001DF67C /* PurchaseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FAAA71E963476001DF67C /* PurchaseObserver.swift */; };
+		AC4F9C211EE791BD00FCCF06 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = AC4F9C1F1EE791BD00FCCF06 /* Cartfile */; };
 		AC7C203B1E1B8C0100FD46C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */; };
+		ACBC58221E9CA4D100D73D45 /* RenewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC58211E9CA4D100D73D45 /* RenewViewController.swift */; };
+		ACBC58251E9CB3D300D73D45 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBC58241E9CB3D300D73D45 /* StoreKit.framework */; };
 		ACBC73251DBDB47100151040 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBC73241DBDB47100151040 /* NotificationCenter.framework */; };
 		ACBC73281DBDB47100151040 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC73271DBDB47100151040 /* TodayViewController.swift */; };
 		ACBC732B1DBDB47100151040 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC73291DBDB47100151040 /* MainInterface.storyboard */; };
@@ -70,8 +75,13 @@
 		AC0E94BE1E1F4BDE00A8C76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsConstants.swift; sourceTree = "<group>"; };
 		AC13999A1DEE843000B0034D /* beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beta.png; sourceTree = "<group>"; };
-		AC7C20391E1B807D00FD46C9 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		AC1BB9AC1E9DF653000110F3 /* ProductIDs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductIDs.plist; sourceTree = "<group>"; };
+		AC2FAAA71E963476001DF67C /* PurchaseObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchaseObserver.swift; path = Purchase/PurchaseObserver.swift; sourceTree = "<group>"; };
+		AC4F9C1F1EE791BD00FCCF06 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		AC4F9C231EE791EF00FCCF06 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
 		AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		ACBC58211E9CA4D100D73D45 /* RenewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenewViewController.swift; sourceTree = "<group>"; };
+		ACBC58241E9CB3D300D73D45 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		ACBC73221DBDB47100151040 /* ToadyExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ToadyExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBC73241DBDB47100151040 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		ACBC73271DBDB47100151040 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +103,6 @@
 		ACE20AFA1D97EF00001B4F34 /* FLyingSnailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLyingSnailUITests.swift; sourceTree = "<group>"; };
 		ACE20AFC1D97EF00001B4F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE20B081D97F4FA001B4F34 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		ACEEA6B71DE53A3400FC6054 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7C203B1E1B8C0100FD46C9 /* Alamofire.framework in Frameworks */,
+				ACBC58251E9CB3D300D73D45 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +158,27 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		AC2FAAA61E963413001DF67C /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				AC2FAAA71E963476001DF67C /* PurchaseObserver.swift */,
+			);
+			name = Purchase;
+			sourceTree = "<group>";
+		};
+		ACBC58231E9CA4D900D73D45 /* Renew */ = {
+			isa = PBXGroup;
+			children = (
+				ACBC58211E9CA4D100D73D45 /* RenewViewController.swift */,
+				AC2FAAA61E963413001DF67C /* Purchase */,
+			);
+			name = Renew;
+			sourceTree = "<group>";
+		};
 		ACBC73231DBDB47100151040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACBC58241E9CB3D300D73D45 /* StoreKit.framework */,
 				AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */,
 				ACBC73241DBDB47100151040 /* NotificationCenter.framework */,
 			);
@@ -180,6 +208,7 @@
 			children = (
 				ACE20B081D97F4FA001B4F34 /* FirstViewController.swift */,
 				ACE20ADC1D97EF00001B4F34 /* SecondViewController.swift */,
+				ACBC58231E9CA4D900D73D45 /* Renew */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -195,12 +224,13 @@
 		ACD7AB2D1DB0BD5800AA7B3F /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				ACEEA6B71DE53A3400FC6054 /* Cartfile */,
-				AC7C20391E1B807D00FD46C9 /* Cartfile.resolved */,
+				AC4F9C1F1EE791BD00FCCF06 /* Cartfile */,
+				AC4F9C231EE791EF00FCCF06 /* Cartfile.resolved */,
 				ACE20AE11D97EF00001B4F34 /* Assets.xcassets */,
 				AC13999A1DEE843000B0034D /* beta.png */,
 				ACE20AE31D97EF00001B4F34 /* LaunchScreen.storyboard */,
 				ACE20AE61D97EF00001B4F34 /* Info.plist */,
+				AC1BB9AC1E9DF653000110F3 /* ProductIDs.plist */,
 			);
 			name = SupportFiles;
 			sourceTree = "<group>";
@@ -359,7 +389,7 @@
 					ACBC73211DBDB47100151040 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 94AJF2JQD9;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 0;
@@ -369,8 +399,11 @@
 					ACE20AD41D97EF00001B4F34 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 94AJF2JQD9;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 0;
 							};
@@ -424,7 +457,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4F9C211EE791BD00FCCF06 /* Cartfile in Resources */,
 				ACD7AB321DB0BDE900AA7B3F /* FirstTableViewCell.xib in Resources */,
+				AC1BB9AD1E9DF653000110F3 /* ProductIDs.plist in Resources */,
 				AC13999B1DEE843000B0034D /* beta.png in Resources */,
 				ACE20AE51D97EF00001B4F34 /* LaunchScreen.storyboard in Resources */,
 				ACE20AE21D97EF00001B4F34 /* Assets.xcassets in Resources */,
@@ -491,8 +526,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBC58221E9CA4D100D73D45 /* RenewViewController.swift in Sources */,
 				AC11FDD21E2FD4E1009FC8EF /* UserDefaultsConstants.swift in Sources */,
 				ACE20B091D97F4FA001B4F34 /* FirstViewController.swift in Sources */,
+				AC2FAAA81E963476001DF67C /* PurchaseObserver.swift in Sources */,
 				ACE20ADD1D97EF00001B4F34 /* SecondViewController.swift in Sources */,
 				ACD7AB311DB0BDE900AA7B3F /* FirstTableViewCell.swift in Sources */,
 				ACE20AD91D97EF00001B4F34 /* AppDelegate.swift in Sources */,
@@ -606,7 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D PRIVATE";
 				SDKROOT = iphoneos;
@@ -623,10 +660,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
 				CURRENT_PROJECT_VERSION = 36;
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -635,8 +672,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.private;
 				PRODUCT_NAME = Private;
-				PROVISIONING_PROFILE = "3dd5a4d8-c1b7-4ff7-8584-f2fa41f3e090";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.snail.Snail";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_PNG_TEXT = YES;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -675,14 +712,14 @@
 		AC1C3B1B1E70FF2100CBE994 /* PrivateDeploy */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToadyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.ToadyExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "04ec23fc-9875-4641-87cd-6e89a0193adc";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.snail.Snail.ToadyExtension";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -692,13 +729,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToadyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.ToadyExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1803f13e-db60-4734-a3a4-622168730c2a";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.snail.Snail.ToadyExtension";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
@@ -708,14 +745,14 @@
 		ACBC73321DBDB47100151040 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToadyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.ToadyExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "04ec23fc-9875-4641-87cd-6e89a0193adc";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.snail.Snail.ToadyExtension";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -756,7 +793,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D RELEASE -Xfrontend -debug-time-function-bodies";
 				SDKROOT = iphoneos;
@@ -773,10 +810,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = InHouse;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Teambition";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 36;
-				DEVELOPMENT_TEAM = D869T5B34L;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -785,8 +822,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.snail.Snail-InHouse";
 				PRODUCT_NAME = InHouse;
-				PROVISIONING_PROFILE = "07e09b64-fdbd-449f-9078-7cfe23b286c0";
-				PROVISIONING_PROFILE_SPECIFIER = "FlyingSnail inhouse";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_PNG_TEXT = NO;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -825,14 +862,14 @@
 		ACC596711DED55CF00A06FF7 /* InHouse */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = D869T5B34L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToadyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.snail.Snail-InHouse.ToadyExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ef5c5884-1f4b-4420-84db-e09a447daaf8";
-				PROVISIONING_PROFILE_SPECIFIER = "FlyingSnail InHouse TodayExtension";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -879,7 +916,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEBUG -Xfrontend -debug-time-function-bodies";
@@ -926,7 +963,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D RELEASE";
 				SDKROOT = iphoneos;
@@ -943,10 +980,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaolian zhang (QE2HNSGV38)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
 				CURRENT_PROJECT_VERSION = 36;
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -955,8 +992,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9b4e819c-3c77-4fcc-a53a-5eb2c981b47b";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.snail.Snail";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_PNG_TEXT = YES;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -969,10 +1006,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
 				CURRENT_PROJECT_VERSION = 36;
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -981,8 +1018,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3dd5a4d8-c1b7-4ff7-8584-f2fa41f3e090";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.snail.Snail";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_PNG_TEXT = YES;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1082,7 +1119,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D ADHOC -Xfrontend -debug-time-function-bodies";
 				SDKROOT = iphoneos;
@@ -1099,10 +1136,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
 				CURRENT_PROJECT_VERSION = 36;
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1111,8 +1148,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1a485288-f16d-436d-a06b-64d208e61491";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.snail.Snail";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_PNG_TEXT = YES;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1151,14 +1188,14 @@
 		ACEEA6FC1DE58AA700FC6054 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToadyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.ToadyExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "98b5d681-8f6f-4d76-bf50-e5e31a104b87";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.snail.Snail.ToadyExtension";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};

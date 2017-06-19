@@ -10,6 +10,7 @@ import UIKit
 import AdSupport
 import Alamofire
 import CoreTelephony
+import StoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,13 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // test UserDefaults
         testUserDefaults()
+//
+//        // test private deploy
+//        #if PRIVATE
+//        print("Private deploy")
+//        #else
+//        print("normal deploy")
+//        #endif
         
-        // test private deploy
-        #if PRIVATE
-        print("Private deploy")
-        #else
-        print("normal deploy")
-        #endif
+        // Attach an observer to the payment queue
+        SKPaymentQueue.default().add(PurchaseObserver.shared)
         
         return true
     }
@@ -59,8 +63,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        // Remove the observer.
+        SKPaymentQueue.default().remove(PurchaseObserver.shared)
     }
-
 
 }
 

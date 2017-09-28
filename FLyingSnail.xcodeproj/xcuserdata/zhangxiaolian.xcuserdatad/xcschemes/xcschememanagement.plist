@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FLyingSnail copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>FLyingSnail.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>FLyingSnail1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>FLyingSnailActionExtension.xcscheme</key>
 		<dict>
@@ -18,6 +28,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>InHouse.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>PrivateDeploy.xcscheme</key>
 		<dict>
@@ -33,6 +48,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>AC0E94B61E1F4BDE00A8C76C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC1FBBDF1F00F4FC00F5E390</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -29,13 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // test UserDefaults
         testUserDefaults()
-//
-//        // test private deploy
-//        #if PRIVATE
-//        print("Private deploy")
-//        #else
-//        print("normal deploy")
-//        #endif
+
+        // test private deploy
+        #if PRIVATE
+        print("Private deploy")
+        #elseif DEBUG_DEV
+        print("DEBUG-DEV")
+        #else
+        print("normal deploy")
+        #endif
         
         // Attach an observer to the payment queue
         SKPaymentQueue.default().add(PurchaseObserver.shared)

@@ -10,6 +10,23 @@
 		AC11FDD21E2FD4E1009FC8EF /* UserDefaultsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */; };
 		AC13999B1DEE843000B0034D /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = AC13999A1DEE843000B0034D /* beta.png */; };
 		AC1BB9AD1E9DF653000110F3 /* ProductIDs.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC1BB9AC1E9DF653000110F3 /* ProductIDs.plist */; };
+		AC1FBBE31F00F4FC00F5E390 /* RenewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC58211E9CA4D100D73D45 /* RenewViewController.swift */; };
+		AC1FBBE41F00F4FC00F5E390 /* UserDefaultsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */; };
+		AC1FBBE51F00F4FC00F5E390 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20B081D97F4FA001B4F34 /* FirstViewController.swift */; };
+		AC1FBBE61F00F4FC00F5E390 /* PurchaseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FAAA71E963476001DF67C /* PurchaseObserver.swift */; };
+		AC1FBBE71F00F4FC00F5E390 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20ADC1D97EF00001B4F34 /* SecondViewController.swift */; };
+		AC1FBBE81F00F4FC00F5E390 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD7AB2F1DB0BDE900AA7B3F /* FirstTableViewCell.swift */; };
+		AC1FBBE91F00F4FC00F5E390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE20AD81D97EF00001B4F34 /* AppDelegate.swift */; };
+		AC1FBBEB1F00F4FC00F5E390 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */; };
+		AC1FBBEC1F00F4FC00F5E390 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBC58241E9CB3D300D73D45 /* StoreKit.framework */; };
+		AC1FBBEE1F00F4FC00F5E390 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = AC4F9C1F1EE791BD00FCCF06 /* Cartfile */; };
+		AC1FBBEF1F00F4FC00F5E390 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD7AB301DB0BDE900AA7B3F /* FirstTableViewCell.xib */; };
+		AC1FBBF01F00F4FC00F5E390 /* ProductIDs.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC1BB9AC1E9DF653000110F3 /* ProductIDs.plist */; };
+		AC1FBBF11F00F4FC00F5E390 /* beta.png in Resources */ = {isa = PBXBuildFile; fileRef = AC13999A1DEE843000B0034D /* beta.png */; };
+		AC1FBBF21F00F4FC00F5E390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE20AE31D97EF00001B4F34 /* LaunchScreen.storyboard */; };
+		AC1FBBF31F00F4FC00F5E390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE20AE11D97EF00001B4F34 /* Assets.xcassets */; };
+		AC1FBBF41F00F4FC00F5E390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE20ADE1D97EF00001B4F34 /* Main.storyboard */; };
+		AC1FBBF61F00F4FC00F5E390 /* ToadyExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACBC73221DBDB47100151040 /* ToadyExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AC2FAAA81E963476001DF67C /* PurchaseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FAAA71E963476001DF67C /* PurchaseObserver.swift */; };
 		AC4F9C211EE791BD00FCCF06 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = AC4F9C1F1EE791BD00FCCF06 /* Cartfile */; };
 		AC7C203B1E1B8C0100FD46C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7C203A1E1B8C0000FD46C9 /* Alamofire.framework */; };
@@ -32,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC1FBBE11F00F4FC00F5E390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE20ACD1D97EF00001B4F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBC73211DBDB47100151040;
+			remoteInfo = ToadyExtension;
+		};
 		ACBC732D1DBDB47100151040 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ACE20ACD1D97EF00001B4F34 /* Project object */;
@@ -56,6 +80,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AC1FBBF51F00F4FC00F5E390 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC1FBBF61F00F4FC00F5E390 /* ToadyExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACBC73341DBDB47100151040 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,6 +111,8 @@
 		AC11FDD11E2FD4E1009FC8EF /* UserDefaultsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsConstants.swift; sourceTree = "<group>"; };
 		AC13999A1DEE843000B0034D /* beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beta.png; sourceTree = "<group>"; };
 		AC1BB9AC1E9DF653000110F3 /* ProductIDs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductIDs.plist; sourceTree = "<group>"; };
+		AC1FBBFF1F00F4FC00F5E390 /* FLyingSnail_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLyingSnail_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1FBC001F00F4FC00F5E390 /* FLyingSnail copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FLyingSnail copy-Info.plist"; path = "/Users/zhangxiaolian/Desktop/My Demo/FLyingSnail/FLyingSnail copy-Info.plist"; sourceTree = "<absolute>"; };
 		AC2FAAA71E963476001DF67C /* PurchaseObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchaseObserver.swift; path = Purchase/PurchaseObserver.swift; sourceTree = "<group>"; };
 		AC4F9C1F1EE791BD00FCCF06 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		AC4F9C231EE791EF00FCCF06 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
@@ -106,6 +143,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC1FBBEA1F00F4FC00F5E390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1FBBEB1F00F4FC00F5E390 /* Alamofire.framework in Frameworks */,
+				AC1FBBEC1F00F4FC00F5E390 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACBC731F1DBDB47100151040 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +300,7 @@
 				AC0E94B81E1F4BDE00A8C76C /* FLyingSnailActionExtension */,
 				ACBC73231DBDB47100151040 /* Frameworks */,
 				ACE20AD61D97EF00001B4F34 /* Products */,
+				AC1FBC001F00F4FC00F5E390 /* FLyingSnail copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +311,7 @@
 				ACE20AEB1D97EF00001B4F34 /* FLyingSnailTests.xctest */,
 				ACE20AF61D97EF00001B4F34 /* FLyingSnailUITests.xctest */,
 				ACBC73221DBDB47100151040 /* ToadyExtension.appex */,
+				AC1FBBFF1F00F4FC00F5E390 /* FLyingSnail_Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,6 +350,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AC1FBBDF1F00F4FC00F5E390 /* FLyingSnail_Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1FBBF91F00F4FC00F5E390 /* Build configuration list for PBXNativeTarget "FLyingSnail_Dev" */;
+			buildPhases = (
+				AC1FBBE21F00F4FC00F5E390 /* Sources */,
+				AC1FBBEA1F00F4FC00F5E390 /* Frameworks */,
+				AC1FBBED1F00F4FC00F5E390 /* Resources */,
+				AC1FBBF51F00F4FC00F5E390 /* Embed App Extensions */,
+				AC1FBBF71F00F4FC00F5E390 /* ShellScript */,
+				AC1FBBF81F00F4FC00F5E390 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC1FBBE01F00F4FC00F5E390 /* PBXTargetDependency */,
+			);
+			name = FLyingSnail_Dev;
+			productName = FLyingSnail;
+			productReference = AC1FBBFF1F00F4FC00F5E390 /* FLyingSnail_Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		ACBC73211DBDB47100151040 /* ToadyExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACBC73331DBDB47100151040 /* Build configuration list for PBXNativeTarget "ToadyExtension" */;
@@ -386,6 +455,9 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = snail;
 				TargetAttributes = {
+					AC1FBBDF1F00F4FC00F5E390 = {
+						DevelopmentTeam = 94AJF2JQD9;
+					};
 					ACBC73211DBDB47100151040 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 94AJF2JQD9;
@@ -440,11 +512,26 @@
 				ACE20AEA1D97EF00001B4F34 /* FLyingSnailTests */,
 				ACE20AF51D97EF00001B4F34 /* FLyingSnailUITests */,
 				ACBC73211DBDB47100151040 /* ToadyExtension */,
+				AC1FBBDF1F00F4FC00F5E390 /* FLyingSnail_Dev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC1FBBED1F00F4FC00F5E390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1FBBEE1F00F4FC00F5E390 /* Cartfile in Resources */,
+				AC1FBBEF1F00F4FC00F5E390 /* FirstTableViewCell.xib in Resources */,
+				AC1FBBF01F00F4FC00F5E390 /* ProductIDs.plist in Resources */,
+				AC1FBBF11F00F4FC00F5E390 /* beta.png in Resources */,
+				AC1FBBF21F00F4FC00F5E390 /* LaunchScreen.storyboard in Resources */,
+				AC1FBBF31F00F4FC00F5E390 /* Assets.xcassets in Resources */,
+				AC1FBBF41F00F4FC00F5E390 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACBC73201DBDB47100151040 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,6 +571,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AC1FBBF71F00F4FC00F5E390 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Hello world\"\nIFS=$'\\n'\nPATH=${PATH}:/usr/local/bin\n\nfunction generateIcon () {\n    BASE_IMAGE_NAME=$1\n    \n    TARGET_PATH=\"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${BASE_IMAGE_NAME}\"\n    CURRENT_BRANCH=$(git branch --no-color | grep '*' | sed 's/^\\*.//')\n    \n    BASE_IMAGE_PATH=$(find ${SRCROOT} -name ${BASE_IMAGE_NAME})\n    WIDTH=$(identify -format %w ${TARGET_PATH})\n    \n    FONT_SIZE=$(echo \"$WIDTH * .15\" | bc -l)\n    echo \"font size $FONT_SIZE\"\n    \n    BETA_IMAGE_PATH=\"${SRCROOT}/inHouse/beta.png\"\n    RESIZE_IMAGE_PATH=\"${SRCROOT}/inHouse/resizedRibbon.png\"\n    \n    if [ \"${CONFIGURATION}\" == \"InHouse\" ]; then\n    convert ${BETA_IMAGE_PATH} -resize ${WIDTH}x${WIDTH} ${RESIZE_IMAGE_PATH}\n    composite ${RESIZE_IMAGE_PATH} ${TARGET_PATH} ${TARGET_PATH}\n    fi\n}\n\ngenerateIcon \"AppIcon60x60@2x.png\"\ngenerateIcon \"AppIcon60x60@3x.png\"\n";
+		};
+		AC1FBBF81F00F4FC00F5E390 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		AC647B101DDC10C400E9729E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +628,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC1FBBE21F00F4FC00F5E390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1FBBE31F00F4FC00F5E390 /* RenewViewController.swift in Sources */,
+				AC1FBBE41F00F4FC00F5E390 /* UserDefaultsConstants.swift in Sources */,
+				AC1FBBE51F00F4FC00F5E390 /* FirstViewController.swift in Sources */,
+				AC1FBBE61F00F4FC00F5E390 /* PurchaseObserver.swift in Sources */,
+				AC1FBBE71F00F4FC00F5E390 /* SecondViewController.swift in Sources */,
+				AC1FBBE81F00F4FC00F5E390 /* FirstTableViewCell.swift in Sources */,
+				AC1FBBE91F00F4FC00F5E390 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACBC731E1DBDB47100151040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -555,6 +683,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC1FBBE01F00F4FC00F5E390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBC73211DBDB47100151040 /* ToadyExtension */;
+			targetProxy = AC1FBBE11F00F4FC00F5E390 /* PBXContainerItemProxy */;
+		};
 		ACBC732E1DBDB47100151040 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ACBC73211DBDB47100151040 /* ToadyExtension */;
@@ -724,6 +857,137 @@
 				SWIFT_VERSION = 3.0;
 			};
 			name = PrivateDeploy;
+		};
+		AC1FBBFA1F00F4FC00F5E390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "FLyingSnail copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG_DEV -Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		AC1FBBFB1F00F4FC00F5E390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "FLyingSnail copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		AC1FBBFC1F00F4FC00F5E390 /* PrivateDeploy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "FLyingSnail copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail.private;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = PrivateDeploy;
+		};
+		AC1FBBFD1F00F4FC00F5E390 /* InHouse */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = InHouse;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "FLyingSnail copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snail.Snail-InHouse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = NO;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = InHouse;
+		};
+		AC1FBBFE1F00F4FC00F5E390 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = YES;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = 94AJF2JQD9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "FLyingSnail copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snail.Snail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_PNG_TEXT = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = AdHoc;
 		};
 		ACBC73301DBDB47100151040 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1204,6 +1468,18 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC1FBBF91F00F4FC00F5E390 /* Build configuration list for PBXNativeTarget "FLyingSnail_Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1FBBFA1F00F4FC00F5E390 /* Debug */,
+				AC1FBBFB1F00F4FC00F5E390 /* Release */,
+				AC1FBBFC1F00F4FC00F5E390 /* PrivateDeploy */,
+				AC1FBBFD1F00F4FC00F5E390 /* InHouse */,
+				AC1FBBFE1F00F4FC00F5E390 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ACBC73331DBDB47100151040 /* Build configuration list for PBXNativeTarget "ToadyExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
